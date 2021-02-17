@@ -1,36 +1,78 @@
 <!doctype html>
-Order a Melongram
+<html>
+    <head>
+        <title>Order a Melongram!</title>
+    </head>
 
-There's no better way to show a loved one you care than with a Melongram.
+    <body>
+        <h1>Order a Melongram</h1>
 
-Each Melongram comes with a custom message printed on high-quality cardstock
-and your choice of a hand-picked, premium melon.
+        <p>There's no better way to show a loved one you care than with a Melongram.</p>
 
-Melon Options
+        <p>Each Melongram comes with a custom message printed on high-quality cardstock
+            and your choice of a hand-picked, premium melon.</p>
 
-Choose from one of these melons:
+        <h2>Melon Options</h2>
 
-Watermelon $1,200.00
-Canteloupe $400.00
-Honeydew $1,750,00.00
+        <p>Choose from one of these melons:</p>
+        
+        <table>
+            <tr>
+                <td>Watermelon</td>
+                <td>$1,200.00</td> 
+            </tr>
+            <tr>
+                <td>Canteloupe</td>
+                <td>$400.00</td>
+            </tr>
+            <tr>
+                <td>Honeydew</td>
+                <td>$1,750,00.00</td>
+            </tr>
+        </table>
+        
 
-Order Form
+        <h2>Order Form</h2>
+            <form>
+                <p>
+                    Your name
+                    <input type="text" name="name">
+                </p>
 
-Your name
+                <p>
+                    Who are we sending this to?
+                    <input type="text" name="recipient">
+                </p>
+                
+                <p>
+                Choose a melon
+                <select name="melon">
+                    <option value="watermelon">Watermelon</option>
+                    <option value="canteloupe">Canteloupe</option>
+                    <option value="honeydew">Honeydew</option>
+                </select>
+                </p>
 
-Who are we sending this to?
+                <p>
+                When should we deliver?
+                <input type="radio" name="time" value="am"> Morning
+                <input type="radio" name="time" value="pm"> Evening
+                <input type="radio" name="time" value="any"> Any time
+                </p>
 
-Choose a melon
-Watermleon
-Canteloupe
-Honeydew
+                <p>
+                Enter your message:
+                </p>
+                <p>
+                <textarea name="message"></textarea>
+                </p>
 
-When should we deliver?
-Morning
-Evening
-Any time
-
-Enter your message:
-
-Subscribe to our newsletter
-Yes
+                <p>
+                Subscribe to our newsletter
+                <input type="checkbox" name="subscribe" value="yes">
+                Yes
+                <input type="submit">
+                </p>
+        </form>
+    </body>
+</html>
