@@ -35,18 +35,21 @@
         <h2>Order Form</h2>
             <form>
                 <p>
-                    Your name
-                    <input type="text" name="name">
+                    <label for="your-name">Your name</label>
+                    <input 
+                        type="text" 
+                        name="name"
+                        id="your-name">
                 </p>
 
                 <p>
-                    Who are we sending this to?
+                    <label for="sending-to">Who are we sending this to?</label>
                     <input type="text" name="recipient">
                 </p>
                 
                 <p>
-                Choose a melon
-                <select name="melon">
+                    <label for="choose-melon">Choose a melon</label>
+                    <select name="melon">
                     <option value="watermelon">Watermelon</option>
                     <option value="canteloupe">Canteloupe</option>
                     <option value="honeydew">Honeydew</option>
@@ -54,7 +57,7 @@
                 </p>
 
                 <p>
-                When should we deliver?
+                </label for="when-should-we-deliver">When should we deliver?</label>
                 <input type="radio" name="time" value="am"> Morning
                 <input type="radio" name="time" value="pm"> Evening
                 <input type="radio" name="time" value="any"> Any time
